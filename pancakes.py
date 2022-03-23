@@ -9,14 +9,10 @@ import sys
 
 #Definición de pila
 def pancakes():
-    ruta_archivo = sys.stdin.readline()
-    
-    archivo = open(ruta_archivo.replace("\n",""),"r")
-    cantidad = int(archivo.readline())
-    
+    cantidad = int(sys.stdin.readline())
     for each_stack in range(cantidad):  
         flips = ""
-        stack = archivo.readline()
+        stack = sys.stdin.readline()
         stack = stack.split(" ")
         n = len(stack)
         for i in range(n):
